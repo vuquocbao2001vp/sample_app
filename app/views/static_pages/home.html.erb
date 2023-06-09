@@ -1,0 +1,12 @@
+<% provide :title, t(".title") %>
+<div class="center jumbotron">
+   <h1><%= t ".welcome" %></h1>
+   <h2>
+      <%= t ".homepage_for" %>
+      <%= link_to t("rails.toturial"), Settings.rails_toturial_url %>
+      <%= t ".sample_app" %>
+   </h2>
+   <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("230d3040650cb452ed1d.jpg", alt: "Rails logo", width: "200px"),
+   Settings.rails_page %>
