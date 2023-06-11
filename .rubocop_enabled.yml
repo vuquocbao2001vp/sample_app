@@ -14,7 +14,7 @@ Layout/HashAlignment:
                  one line.
   Enabled: true
 
-Layout/ParameterAlignment:
+Layout:
   Description: >-
                  Align the parameters of a method call if they span more
                  than one line.

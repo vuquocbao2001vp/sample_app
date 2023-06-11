@@ -1,3 +1,8 @@
+valid_email_regex: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+max_length_name: 10
+min_length_email: 20
+max_length_email: 255
+min_length_password: 6
 news_rails_url: https://news.railstutorial.org/
 rails_toturial_url: https://www.railstutorial.org/
 rails_toturial_author: https://www.michaelhartl.com/
