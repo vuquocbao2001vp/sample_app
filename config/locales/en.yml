@@ -31,3 +31,8 @@ en:
     login: Log in
     signup:
       title: Sign up
+    new:
+      name_label: Name
+      password_label: Password
+      confirm_label: Confirmation
+      signup_button: Create my account

@@ -1,4 +1,4 @@
-valid_email_regex: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+valid_email_regex: \A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z
 max_length_name: 10
 min_length_email: 20
 max_length_email: 255

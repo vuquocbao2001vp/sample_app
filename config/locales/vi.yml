@@ -31,3 +31,8 @@ vi:
     login: Đăng nhập
     signup:
       title: Đăng ký
+    new:
+      name_label: Tên
+      password_label: Mật khẩu
+      confirm_label: Xác nhận mật khẩu
+      signup_button: Tạo tài khoản
