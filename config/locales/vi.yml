@@ -1,0 +1,33 @@
+vi:
+  rails:
+    toturial: Ruby on Rails cơ bản
+    author: Michael Hartl
+  app:
+   name: Sample App
+  layouts:
+    title: Ruby on Rails Tutorial Sample App
+  static_pages:
+    home:
+      title: Trang chủ
+      welcome: Chào mừng đến với Sample App
+      homepage_for: Đây là trang chủ của
+      sample_app: sample application.
+      signup: Đăng ký ngay!
+    help:
+      title: Trợ giúp
+      page: trang trợ giúp của Rails Tutorial
+      book: sách Ruby on Rails cơ bản.
+      get_help_at: Liên hệ trợ giúp về Ruby on Rails cơ bản tại
+      help_sample_app: Để được giúp đỡ với sample app, vui lòng xem
+    contact:
+      title: Liên hệ
+      contact_at: Để biết thêm thông tin về Ruby on Rails Tutorial Sample App, vui lòng
+      contact_info: liên hệ tại đây.
+    about:
+      title: Về chúng tôi
+    news:
+      title: Tin tức
+  users:
+    login: Đăng nhập
+    signup:
+      title: Đăng ký

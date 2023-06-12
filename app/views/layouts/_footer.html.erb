@@ -1,0 +1,13 @@
+<footer class="footer">
+   <small>
+      The <%= link_to t("rails.toturial"), Settings.rails_toturial_url %>
+      by <%= link_to t("rails.author"), Settings.rails_toturial_author %>
+   </small>
+   <nav>
+      <ul>
+         <li><%= link_to t("static_pages.about.title"), about_path %></li>
+         <li><%= link_to t("static_pages.contact.title"), contact_path %></li>
+         <li><%= link_to t("static_pages.news.title"), Settings.news_rails_url %></li>
+      </ul>
+   </nav>
+<footer>
