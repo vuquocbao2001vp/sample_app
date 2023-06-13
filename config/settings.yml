@@ -17,3 +17,9 @@ gravatar_change_url: https://gravatar.com/emails
 gravar_user_size_80: 80
 gravar_user_size_50: 50
 email_expired_hour_2: 2
+gravar_post_size_50: 50
+max_length_content_140: 140
+valid_image_format: image/jpeg image/gif image/png
+validate_image_format: ["image/jpeg", "image/gif", "image/png"]
+max_image_size_5_MB: 5
+limit_image_area: [500, 500]

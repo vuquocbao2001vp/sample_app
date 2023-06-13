@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  include Pagy::Backend
-
   before_action :logged_in_user, except: %i(new show create)
   before_action :admin_user, only: :destroy
   before_action :find_user_by_id, only: %i(show update edit destroy)
@@ -13,7 +11,9 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show; end
+  def show
+    @pagy_micropost, @microposts = pagy @user.microposts.newest
+  end
 
   def create
     @user = User.new user_params
@@ -58,14 +58,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit :name, :email, :password, :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t("flash.danger.login_required")
-    redirect_to login_url
   end
 
   def correct_user
