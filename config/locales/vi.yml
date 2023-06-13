@@ -60,13 +60,29 @@ vi:
       remember_me: Ghi nhớ đăng nhập
   shared:
     error_text: lỗi
+  user_mailer:
+    account_activation:
+      title: Sample App
+      greeting: Chào
+      welcome: "Chào mừng tới Sample App! Click vào đường dẫn bên dưới để kích hoạt tài khoản của bạn:"
+      activate_text: Kích hoạt
+      email_subject: Kích hoạt tài khoản
   flash:
-    warning_user_not_found: Không tìm thấy người dùng
-    success_user_created: Chào mừng đến với Sample App
-    success_user_updated: Sửa thông tin người dùng thành công
-    success_user_deleted: Xóa người dùng thành công
-    danger_login_failed: Đăng nhập không thành công
-    danger_login_required: Yêu cầu đăng nhập.
-    danger_user_deleted_unsuccessfully: Xóa người dùng không thành công!
-    danger_admin_required: Cần đăng nhập với quản trị viên để xóa!
-    danger_uncorrect_user: Người dùng không chính xác!
+    success:
+      user_created: Chào mừng đến với Sample App
+      user_updated: Sửa thông tin người dùng thành công
+      user_deleted: Xóa người dùng thành công
+      activated_account: Tài khoản đã được kích hoạt!
+    warning:
+      user_not_found: Không tìm thấy người dùng
+      email_not_found: Không tìm thấy email
+      not_activated_account: Tài khoản chưa được kích hoạt. vui lòng check email để kích hoạt tài khoản.
+    danger:
+      login_failed: Đăng nhập không thành công
+      login_required: Yêu cầu đăng nhập.
+      invalid_activation_link: Đường dẫn kích hoạt không hợp lệ
+      user_deleted_unsuccessfully: Xóa người dùng không thành công!
+      uncorrect_user: Không xác định được người dùng!
+      admin_required: Yêu cầu quyền quản trị viên!
+    info:
+      activate_email_check: Vui lòng kiểm tra email để kích hoạt tài khoản.

@@ -1,3 +1,5 @@
+app_url: 127.0.0.1
+app_port: 3000
 valid_email_regex: \A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z
 max_length_name: 20
 min_length_email: 20

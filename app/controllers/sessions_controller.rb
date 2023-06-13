@@ -11,14 +11,18 @@ class SessionsController < ApplicationController
     redirect_to home_url
   end
 
-  private
   def authenticate_user user
     if user&.authenticate params[:session][:password]
-      log_in user
-      params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-      redirect_back_or user
+      if user.activated?
+        log_in user
+        params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+        redirect_back_or user
+      else
+        flash[:warning] = t "flash.warning.not_activated_account"
+        redirect_to root_url
+      end
     else
-      flash.now[:danger] = t "flash.danger_login_failed"
+      flash.now[:danger] = t "flash.danger.login_failed"
       render :new
     end
   end
