@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, except: %i(new show create)
   before_action :admin_user, only: :destroy
-  before_action :find_user_by_id, only: %i(show update edit destroy)
+  before_action :find_user_by_id, only: %i(show update edit destroy following followers)
   before_action :correct_user, only: %i(edit update)
   def index
     @pagy, @users = pagy User.order_by_name
@@ -46,6 +46,17 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def following
+    @title = t "users.show_follow.following_title"
+    @pagy_users, @users = pagy @user.following.order_by_name
+    render :show_follow
+  end
+
+  def followers
+    @title = t "users.show_follow.followers_title"
+    @pagy_users, @users = pagy @user.followers.order_by_name
+    render :show_follow
+  end
   private
 
   def find_user_by_id

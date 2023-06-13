@@ -4,6 +4,10 @@ class Micropost < ApplicationRecord
 
   scope :newest, ->{order created_at: :desc}
   scope :by_user, ->(user_id){where user_id:}
+  scope :by_user_status, lambda {|user_id|
+    following_ids = "SELECT followed_id FROM relationships WHERE follower_id = :user_id"
+    where("user_id IN (#{following_ids}) OR user_id = :user_id", user_id:)
+  }
 
   validates :user_id, presence: true
   validates :content, presence: true, length: {maximum: Settings.max_length_content_140}
