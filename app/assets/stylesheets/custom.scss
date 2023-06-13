@@ -169,3 +169,15 @@ input {
     color: $state-danger-text;
   }
 }
+
+.dropdown-toggle{
+  color: $grey-header-text-color;
+  cursor: pointer
+}
+.dropdown-toggle:hover{
+  color: $white-primary-color;
+}
+.navbar-right{
+  display: flex;
+  align-items: center;
+}
