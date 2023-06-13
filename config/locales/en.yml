@@ -47,6 +47,7 @@ en:
       password_label: Password
       new_user: Don't have account?
       signup_now: Register now!
+      remember_me: Remember me on this computer
   shared:
     error_text: error
   flash:
