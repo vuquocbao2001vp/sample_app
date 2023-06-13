@@ -41,6 +41,16 @@ en:
       password_label: Password
       confirm_label: Confirmation
       signup_button: Create my account
+    edit:
+      title: Edit User
+      header: Update your profile
+      save_changes_button: Save changes
+      change_avatar_button: Change
+    index:
+      title: All users
+    delete:
+      delete_button: " | Delete"
+      confirm_delete_button: You sure?
   sessions:
     new:
       title: Log in
@@ -53,4 +63,10 @@ en:
   flash:
     warning_user_not_found: User not found
     success_user_created: Welcome to Sample App
+    success_user_updated: Update user successfully
+    success_user_deleted: User deleted successfully
     danger_login_failed: Login failed
+    danger_login_required: Please log in.
+    danger_user_deleted_unsuccessfully: User deleted unsuccessfully!
+    danger_admin_required: Login with admin to delete!
+    danger_uncorrect_user: Uncorrect user!

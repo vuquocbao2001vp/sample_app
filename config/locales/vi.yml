@@ -41,6 +41,16 @@ vi:
       password_label: Mật khẩu
       confirm_label: Xác nhận mật khẩu
       signup_button: Tạo tài khoản
+    edit:
+      title: Cập nhật người dùng
+      header: Cập nhật người dùng
+      save_changes_button: Lưu thay đổi
+      change_avatar_button: Chọn ảnh
+    index:
+      title: Danh sách người dùng
+    delete:
+      delete_button: " | Xóa"
+      confirm_delete_button: Bạn có chắc chắn muốn xóa?
   sessions:
     new:
       title: Đăng nhập
@@ -53,4 +63,10 @@ vi:
   flash:
     warning_user_not_found: Không tìm thấy người dùng
     success_user_created: Chào mừng đến với Sample App
+    success_user_updated: Sửa thông tin người dùng thành công
+    success_user_deleted: Xóa người dùng thành công
     danger_login_failed: Đăng nhập không thành công
+    danger_login_required: Yêu cầu đăng nhập.
+    danger_user_deleted_unsuccessfully: Xóa người dùng không thành công!
+    danger_admin_required: Cần đăng nhập với quản trị viên để xóa!
+    danger_uncorrect_user: Người dùng không chính xác!

@@ -1,0 +1,7 @@
+<li>
+  <%= gravatar_for user, size: Settings.gravar_user_size_50 %>
+  <%= link_to user.name, user %>
+  <% if delete_action_enable?(user) %>
+    <%= link_to t("users.delete.delete_button"), user, method: :delete, data: {confirm: t("users.delete.confirm_delete_button")} %>
+  <% end %>
+</li>
