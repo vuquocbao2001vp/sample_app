@@ -31,3 +31,13 @@ vi:
     login: Đăng nhập
     signup:
       title: Đăng ký
+    new:
+      name_label: Tên
+      password_label: Mật khẩu
+      confirm_label: Xác nhận mật khẩu
+      signup_button: Tạo tài khoản
+  shared:
+    error_text: lỗi
+  flash:
+    warning_user_not_found: Không tìm thấy người dùng
+    success_user_created: Chào mừng đến với Sample App
