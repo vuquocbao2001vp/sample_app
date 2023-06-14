@@ -3,7 +3,7 @@ class User < ApplicationRecord
 
   validates :name, presence: true, length: {maximum: Settings.max_length_name}
   validates :email, presence: true, length: {minimum: Settings.min_length_email, maximum: Settings.max_length_email},
-    format: {with: Settings.valid_email_regex}, uniqueness: {case_sensitive: false}
+    format: {with: Regexp.new(Settings.valid_email_regex)}, uniqueness: {case_sensitive: false}
   validates :password, presence: true, length: {minimum: Settings.min_length_password}, if: :password
 
   has_secure_password
@@ -11,6 +11,6 @@ class User < ApplicationRecord
   private
 
   def downcase_email
-    User.email.downcase!
+    email.downcase!
   end
 end
