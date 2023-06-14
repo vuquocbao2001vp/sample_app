@@ -28,7 +28,12 @@ vi:
     news:
       title: Tin tức
   users:
+    user: Người dùng
     login: Đăng nhập
+    account: Tài khoản
+    profile: Trang cá nhân
+    settings: Cài đặt
+    logout: Đăng xuất
     signup:
       title: Đăng ký
     new:
@@ -36,8 +41,15 @@ vi:
       password_label: Mật khẩu
       confirm_label: Xác nhận mật khẩu
       signup_button: Tạo tài khoản
+  sessions:
+    new:
+      title: Đăng nhập
+      password_label: Mật khẩu
+      new_user: Bạn chưa có tài khoản?
+      signup_now: Đăng ký ngay!
   shared:
     error_text: lỗi
   flash:
     warning_user_not_found: Không tìm thấy người dùng
     success_user_created: Chào mừng đến với Sample App
+    danger_login_failed: Đăng nhập không thành công

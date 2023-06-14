@@ -28,7 +28,12 @@ en:
     news:
       title: News
   users:
+    user: User
     login: Log in
+    account: Account
+    profile: Profile
+    settings: Settings
+    logout: Log out
     signup:
       title: Sign up
     new:
@@ -36,8 +41,15 @@ en:
       password_label: Password
       confirm_label: Confirmation
       signup_button: Create my account
+  sessions:
+    new:
+      title: Log in
+      password_label: Password
+      new_user: Don't have account?
+      signup_now: Register now!
   shared:
     error_text: error
   flash:
     warning_user_not_found: User not found
     success_user_created: Welcome to Sample App
+    danger_login_failed: Login failed
