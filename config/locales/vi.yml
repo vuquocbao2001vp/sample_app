@@ -47,6 +47,7 @@ vi:
       password_label: Mật khẩu
       new_user: Bạn chưa có tài khoản?
       signup_now: Đăng ký ngay!
+      remember_me: Ghi nhớ đăng nhập
   shared:
     error_text: lỗi
   flash:
