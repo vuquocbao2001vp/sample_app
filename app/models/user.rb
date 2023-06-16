@@ -1,12 +1,14 @@
 class User < ApplicationRecord
   attr_accessor :remember_token
 
+  scope :order_by_name, ->{order :name}
+
   before_save :downcase_email
 
   validates :name, presence: true, length: {maximum: Settings.max_length_name}
   validates :email, presence: true, length: {minimum: Settings.min_length_email, maximum: Settings.max_length_email},
     format: {with: Regexp.new(Settings.valid_email_regex)}, uniqueness: {case_sensitive: false}
-  validates :password, presence: true, length: {minimum: Settings.min_length_password}, if: :password
+  validates :password, presence: true, length: {minimum: Settings.min_length_password}, allow_nil: true
 
   has_secure_password
 
