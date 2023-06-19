@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    user = User.find_by email: params[:session][:email].downcase
+    user = User.find_by email: params.dig(:session, :email).downcase
     authenticate_user user
   end
 
@@ -12,10 +12,10 @@ class SessionsController < ApplicationController
   end
 
   def authenticate_user user
-    if user&.authenticate params[:session][:password]
+    if user&.authenticate params.dig(:session, :password)
       if user.activated?
         log_in user
-        params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+        params.dig(:session, :remember_me) == "1" ? remember(user) : forget(user)
         redirect_back_or user
       else
         flash[:warning] = t "flash.warning.not_activated_account"

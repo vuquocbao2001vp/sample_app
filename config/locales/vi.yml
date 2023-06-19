@@ -58,6 +58,7 @@ vi:
       new_user: Bạn chưa có tài khoản?
       signup_now: Đăng ký ngay!
       remember_me: Ghi nhớ đăng nhập
+      forgot_password: Quên mật khẩu
   shared:
     error_text: lỗi
   user_mailer:
@@ -67,12 +68,28 @@ vi:
       welcome: "Chào mừng tới Sample App! Click vào đường dẫn bên dưới để kích hoạt tài khoản của bạn:"
       activate_text: Kích hoạt
       email_subject: Kích hoạt tài khoản
+    password_reset:
+      title: Thay đổi mật khẩu
+      email_subject: Thay đổi mật khẩu
+      reset_link_text: "Để lấy lại mật khẩu, vui lòng bấm vào đường dẫn bên dưới:"
+      expired_text: Đường dẫn sẽ hết hạn trong 2 giờ.
+      ignore_reset: Nếu bạn không yêu cầu lấy lại mật khẩu, vui lòng bỏ qua email này.
+  password_resets:
+    new:
+      title: Quên mật khẩu
+      submit_button: Xác nhận
+    edit:
+      title: Thay đổi mật khẩu
+      submit_button: Đổi mật khẩu
+      password_label: Mật khẩu
+      confirmation_label: Xác nhận mật khẩu
   flash:
     success:
       user_created: Chào mừng đến với Sample App
       user_updated: Sửa thông tin người dùng thành công
       user_deleted: Xóa người dùng thành công
       activated_account: Tài khoản đã được kích hoạt!
+      password_reseted: Đổi mật khẩu thành công.
     warning:
       user_not_found: Không tìm thấy người dùng
       email_not_found: Không tìm thấy email
@@ -84,5 +101,11 @@ vi:
       user_deleted_unsuccessfully: Xóa người dùng không thành công!
       uncorrect_user: Không xác định được người dùng!
       admin_required: Yêu cầu quyền quản trị viên!
+      email_not_found: Email không tồn tại
+      expired_reset_password: Đổi mật khẩu đã hết hạn.
+      update_password_failed: Đổi mật khẩu không thành công!
     info:
       activate_email_check: Vui lòng kiểm tra email để kích hoạt tài khoản.
+      reset_email_check: Email hướng dẫn thay đổi mật khẩu đã được gửi
+  validate:
+    not_empty_required: không được để trống
