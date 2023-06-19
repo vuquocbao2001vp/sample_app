@@ -3,13 +3,17 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "3.2.2"
 
+gem "active_storage_validations"
 gem "bcrypt", "~> 3.1", ">= 3.1.11"
 gem "bootsnap", ">= 1.4.4", require: false
 gem "bootstrap-sass"
 gem "config"
 gem "faker"
 gem "figaro"
+gem "i18n-js", "~> 3.0", ">= 3.0.2"
+gem "image_processing", "1.12.2"
 gem "jbuilder", "~> 2.7"
+gem "mini_magick"
 gem "mysql2", "~> 0.5"
 gem "pagy", "6.0.0"
 gem "pry-rails"

@@ -13,6 +13,7 @@ vi:
       homepage_for: Đây là trang chủ của
       sample_app: sample application.
       signup: Đăng ký ngay!
+      micropost_feed: Bản tin bài viết
     help:
       title: Trợ giúp
       page: trang trợ giúp của Rails Tutorial
@@ -51,6 +52,14 @@ vi:
     delete:
       delete_button: " | Xóa"
       confirm_delete_button: Bạn có chắc chắn muốn xóa?
+    show:
+      micropost_title: Bài viết
+  microposts:
+    post_text: Đăng
+    ago_text: trước.
+    delete_button: " | Xóa"
+    confirm_delete_button: Bạn có chắc chắn muốn xóa?
+    max_file_size_warning: Kích cỡ tối đa của tệp là 5MB. Vui lòng chọn tệp có kích thước nhỏ hơn.
   sessions:
     new:
       title: Đăng nhập
@@ -61,6 +70,10 @@ vi:
       forgot_password: Quên mật khẩu
   shared:
     error_text: lỗi
+    micropost_text: bài viết
+    view_profile_text: xem trang cá nhân
+    compose_new_post: Tạo bài viết mới...
+    post_button: Đăng
   user_mailer:
     account_activation:
       title: Sample App
@@ -90,6 +103,8 @@ vi:
       user_deleted: Xóa người dùng thành công
       activated_account: Tài khoản đã được kích hoạt!
       password_reseted: Đổi mật khẩu thành công.
+      micropost_created: Tạo bài viết thành công!
+      micropost_deleted: Xóa bài viết thành công!
     warning:
       user_not_found: Không tìm thấy người dùng
       email_not_found: Không tìm thấy email
@@ -104,8 +119,12 @@ vi:
       email_not_found: Email không tồn tại
       expired_reset_password: Đổi mật khẩu đã hết hạn.
       update_password_failed: Đổi mật khẩu không thành công!
+      micropost_created_unsuccessful: Tạo bài viết không thành công!
+      micropost_deleted_unsuccessful: Xóa bài viết không thành công!
     info:
       activate_email_check: Vui lòng kiểm tra email để kích hoạt tài khoản.
       reset_email_check: Email hướng dẫn thay đổi mật khẩu đã được gửi
   validate:
     not_empty_required: không được để trống
+    valid_image_format: phải đúng định dạng
+    less_than_5MB_image_size: phải nhỏ hơn 5MB

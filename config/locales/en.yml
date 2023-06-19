@@ -13,6 +13,7 @@ en:
       homepage_for: This is the homepage for the
       sample_app: sample application.
       signup: Sign up now!
+      micropost_feed: Micropost Feed
     help:
       title: Help
       page: Rails Tutorial help page
@@ -51,6 +52,14 @@ en:
     delete:
       delete_button: " | Delete"
       confirm_delete_button: You sure?
+    show:
+      micropost_title: Microposts
+  microposts:
+    post_text: Posted
+    ago_text: ago.
+    delete_button: " | Delete"
+    confirm_delete_button: You sure?
+    max_file_size_warning: Maximum file size is 5MB. Please choose a smaller file.
   sessions:
     new:
       title: Log in
@@ -61,6 +70,10 @@ en:
       forgot_password: Forgot password
   shared:
     error_text: error
+    micropost_text: micropost
+    view_profile_text: view my profile
+    compose_new_post: Compose new micropost..
+    post_button: Post
   user_mailer:
     account_activation:
       title: Sample App
@@ -90,6 +103,8 @@ en:
       user_deleted: User deleted successfully
       activated_account: Account activated!
       password_reseted: Password has been reset.
+      micropost_created: Micropost created!
+      micropost_deleted: Micropost deleted!
     warning:
       user_not_found: User not found
       email_not_found: Email not found
@@ -104,8 +119,12 @@ en:
       email_not_found: Email address not found
       expired_reset_password: Password reset has expired.
       update_password_failed: Password update has failed!
+      micropost_created_unsuccessful: Micropost created unsuccessful!
+      micropost_deleted_unsuccessful: Micropost deleted unsuccessful!
     info:
       activate_email_check: Please check your email to activate your account.
       reset_email_check: Email sent with password reset instructions
   validate:
     not_empty_required: can't be empty
+    valid_image_format: must be a valid image format
+    less_than_5MB_image_size: should be less than 5MB

@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include Pagy::Backend
   include SessionsHelper
   before_action :set_locale
 
@@ -11,4 +12,13 @@ class ApplicationController < ActionController::Base
   end
 
   protect_from_forgery with: :exception
+
+  private
+  def logged_in_user
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t "flash.danger.login_required"
+    redirect_to login_url
+  end
 end
