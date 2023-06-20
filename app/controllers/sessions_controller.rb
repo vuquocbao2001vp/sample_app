@@ -13,17 +13,22 @@ class SessionsController < ApplicationController
 
   def authenticate_user user
     if user&.authenticate params.dig(:session, :password)
-      if user.activated?
-        log_in user
-        params.dig(:session, :remember_me) == "1" ? remember(user) : forget(user)
-        redirect_back_or user
-      else
-        flash[:warning] = t "flash.warning.not_activated_account"
-        redirect_to root_url
-      end
+      remember_login user
     else
       flash.now[:danger] = t "flash.danger.login_failed"
       render :new
+    end
+  end
+
+  private
+  def remember_login user
+    if user.activated?
+      log_in user
+      params.dig(:session, :remember_me) == "1" ? remember(user) : forget(user)
+      redirect_back_or user
+    else
+      flash[:warning] = t "flash.warning.not_activated_account"
+      redirect_to root_url
     end
   end
 end

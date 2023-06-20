@@ -1,10 +1,9 @@
 class MicropostsController < ApplicationController
   before_action :logged_in_user, only: %i(create destroy)
   before_action :correct_user, only: :destroy
+  before_action :prepare_create_micropost, only: :create
 
   def create
-    @micropost = current_user.microposts.build micropost_params
-    @micropost.image.attach params.dig(:micropost, :image)
     if @micropost.save
       flash[:success] = t "flash.success.micropost_created"
       redirect_to root_url
@@ -35,5 +34,10 @@ class MicropostsController < ApplicationController
 
     flash[:danger] = t "flash.danger.uncorrect_user"
     redirect_to root_url
+  end
+
+  def prepare_create_micropost
+    @micropost = current_user.microposts.build micropost_params
+    @micropost.image.attach params.dig(:micropost, :image)
   end
 end

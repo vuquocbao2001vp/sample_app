@@ -16,6 +16,7 @@ gravatar_url: https://secure.gravatar.com/avatar/
 gravatar_change_url: https://gravatar.com/emails
 gravar_user_size_80: 80
 gravar_user_size_50: 50
+gravar_user_size_30: 30
 email_expired_hour_2: 2
 gravar_post_size_50: 50
 max_length_content_140: 140

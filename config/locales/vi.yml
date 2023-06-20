@@ -54,6 +54,14 @@ vi:
       confirm_delete_button: Bạn có chắc chắn muốn xóa?
     show:
       micropost_title: Bài viết
+    follow_form:
+      follow_button: Theo dõi
+      unfollow_button: Bỏ theo dõi
+    show_follow:
+      micropost_title: "Bài viết:"
+      view_profile_text: Xem trang cá nhân
+      following_title: Đang theo dõi
+      followers_title: Người theo dõi
   microposts:
     post_text: Đăng
     ago_text: trước.
@@ -71,9 +79,11 @@ vi:
   shared:
     error_text: lỗi
     micropost_text: bài viết
-    view_profile_text: xem trang cá nhân
+    view_profile_text: Xem trang cá nhân
     compose_new_post: Tạo bài viết mới...
     post_button: Đăng
+    following_text: đang theo dõi
+    followers_text: người theo dõi
   user_mailer:
     account_activation:
       title: Sample App
